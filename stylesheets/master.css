@@ -1,0 +1,236 @@
+/*
+Biznobo Custom CSS
+Author: Biznobo
+*/
+
+/* Nav Bar
+======================*/
+
+.nav-wrapper {
+  background-color: #fff;
+  border-bottom: solid 2px #f5762f;
+}
+.nav-wrapper ul li a{
+    color: #33495f;
+}
+.brand-logo{
+  width: 150px;
+  margin: 15px 20px;
+}
+
+/* Header
+======================*/
+
+.header {
+  border-bottom: solid 2px #f5762f;
+  position: relative;
+}
+.header-img {
+  position: relative;
+}
+
+/* Gears =========*/
+.gear-img-spin {
+  position: absolute;
+  -webkit-animation:spin 8s linear infinite;
+  -moz-animation:spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+.gear-img-counterSpin {
+  position: absolute;
+  -webkit-animation: antiClockwiseSpin 8s linear infinite;
+  -moz-animation: antiClockwiseSpin 8s linear infinite;
+  animation: antiClockwiseSpin 8s linear infinite;
+}
+.gear-1{
+  height: 1.8em;
+  max-width: 1.8em;
+  top: 32%;
+  left: 36%;
+}
+.gear-2{
+  height: 1.8em;
+  width: 1.8em;
+  top: 36%;
+  left: 37.5%;
+}
+.gear-3{
+  height: 40px;
+  width: 40px;
+  top: 33%;
+  left: 39.5%;
+}
+.gear-4{
+  height: 28px;
+  width: 28px;
+  top: 32%;
+  left: 42.25%;
+}
+
+/*  Triangles ==========*/
+
+.arrow-up {
+  position: absolute;
+	width: 0;
+	height: 0;
+  z-index: 1;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #ff9f17;
+}
+.arrow-1 {
+  top: 53%;
+  left: 39.8%;
+  -webkit-animation:fall .8s linear infinite;
+  -moz-animation:fall .8s linear infinite;
+  animation: fall .8s linear infinite;
+}
+.arrow-2 {
+  top: 60.25%;
+  right: 14%;
+  overflow: hidden;
+  -webkit-animation:shortFall 3s linear infinite;
+  -moz-animation:shortFall 3s linear infinite;
+  animation: shortFall 3s linear infinite;
+}
+.arrow-3 {
+  top: 60.25%;
+  right: 14%;
+  overflow: hidden;
+  -webkit-animation:shortFall 3s linear infinite;
+  -moz-animation:shortFall 3s linear infinite;
+  animation: shortFall 3s linear infinite;
+  animation-delay: 600ms;
+}
+.arrow-4 {
+  top: 60.25%;
+  right: 14%;
+  overflow: hidden;
+  -webkit-animation:shortFall 3s linear infinite;
+  -moz-animation:shortFall 3s linear infinite;
+  animation: shortFall 3s linear infinite;
+  animation-delay: 1200ms;
+}
+.arrow-5 {
+  top: 60.25%;
+  right: 14%;
+  overflow: hidden;
+  -webkit-animation:shortFall 3s linear infinite;
+  -moz-animation:shortFall 3s linear infinite;
+  animation: shortFall 3s linear infinite;
+  animation-delay: 1800ms;
+}
+.arrow-6 {
+  top: 60.25%;
+  right: 14%;
+  overflow: hidden;
+  -webkit-animation:shortFall 3s linear infinite;
+  -moz-animation:shortFall 3s linear infinite;
+  animation: shortFall 3s linear infinite;
+  animation-delay: 2400ms;
+}
+.magic-box {
+  position: absolute;
+  top: 62.9%;
+  left: 39.75%;
+  height: 12px;
+  width: 15px;
+  z-index: 2;
+  background: #4e4e4e;
+}
+
+/*  Bands ==========*/
+
+.band-1 {
+  position: absolute;
+  top: 64.8%;
+  right: 13.75%;
+  width: 11.4%;
+  height: 3.25%;
+  background: #cbcac8;
+  border-radius: 8px;
+}
+.band-2 {
+  position: absolute;
+  top: 77%;
+  right: 30.5%;
+  width: 250px;
+  height: 12px;
+  background: #cbcac8;
+  border-radius: 8px;
+}
+.band::before {
+  background-image: radial-gradient(#4b5d6f 40%, rgba(0, 0, 0, 0) 41%);
+  background-size: 12px 12px;
+  background-position: 0px 0px;
+  width: 90%;
+  height: 12px;
+  top: 0px;
+  right: 5px;
+  z-index: 2;
+  animation: band 5s linear infinite normal;
+}
+.band::after {
+  background: #4b5d6f;
+  width: 79%;
+  top: 12px;
+  left: 57px;
+  transform: skew(-15deg);
+}
+.arrow::before, .arrow::after, .band::before, .band::after {
+  content: '';
+  position: absolute;
+}
+
+/* Keyframe Animations
+======================*/
+
+/* Clock Wise Spin */
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+/* Counter Clock Wise Spin */
+@keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);}	}
+@-moz-keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);} }
+@-webkit-keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);} }
+
+/* Droplets */
+@keyframes fall{0% {transform:  translate(0px,0px)  ;}100% {transform:  translate(0px,38px)  ;}}
+@-moz-keyframes fall{0% {-moz-transform:  translate(0px,0px)  ;}100% {-moz-transform:  translate(0px,38px)  ;}}
+@-webkit-keyframes fall {0% {-webkit-transform:  translate(0px,0px)  ;}100% {-webkit-transform:  translate(0px,38px)  ;}}
+
+/* Droplets Short Fall & Move Left */
+@keyframes shortFall{0% {transform:  translate(0px,0px)  ;}10% {transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+@-moz-keyframes shortFall{0% {-moz-transform:  translate(0px,0px)  ;}40% {-moz-transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+@-webkit-keyframes shortFall {0% {-webkit-transform:  translate(0px,0px)  ;}40% {-webkit-transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+
+
+/* Move Left */
+@keyframes band {0% {background-position: 0px 0px;}100% {background-position: -100% 0px;}}
+@-moz-keyframes band {0% {-moz-background-position: 0px 0px;}100% {-moz-background-position: 100% 0px;}}
+@-webkit-keyframes band {0% {-webkit-background-position: 0px 0px;}100% {-webkit-background-position: 100% 0px;}}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6 .band::before {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
