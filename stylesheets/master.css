@@ -32,7 +32,58 @@ Author: Biznobo
   position: relative;
 }
 
-/* Gears =========*/
+/* Animation Containers
+=================================*/
+#animations-container {
+  position: relative;
+  width: 1280px;
+}
+
+#indoctrination-gears{
+  position: absolute;
+  top: 100px;
+  left: 450px;
+  width:125px;
+}
+
+#arrows-and-band-1 {
+  position: absolute;
+  top: 195px;
+  right: 160px;
+  height: 60px;
+  width: 200px;
+}
+
+#arrows-and-band-2 {
+  position: absolute;
+  top: 240px;
+  right: 310px;
+  height: 50px;
+  width: 360px;
+}
+
+#siren {
+  position: absolute;
+  top: 14px;
+  right: 475px;
+  height: 70px;
+  width: 100px;
+}
+#ascension {
+  position: absolute;
+  top: 40px;
+  right: 320px;
+}
+#conveyor-belt {
+  position: absolute;
+  top: 45px;
+  right: 6px;
+  height: 300px;
+}
+/* Animation Elements
+=================================*/
+
+/* Indoctrination Gears =========*/
 .gear-img-spin {
   position: absolute;
   -webkit-animation:spin 8s linear infinite;
@@ -48,32 +99,55 @@ Author: Biznobo
 .gear-1{
   height: 1.8em;
   max-width: 1.8em;
-  top: 32%;
-  left: 36%;
+  top: 5px;
+  left: 15px;
 }
 .gear-2{
   height: 1.8em;
   width: 1.8em;
-  top: 36%;
-  left: 37.5%;
+  top: 25px;
+  left: 28px;
 }
 .gear-3{
-  height: 40px;
-  width: 40px;
-  top: 33%;
-  left: 39.5%;
+  height: 2.8em;
+  width: 2.8em;
+  top: 2px;
+  left: 48px;
 }
 .gear-4{
-  height: 28px;
-  width: 28px;
-  top: 32%;
-  left: 42.25%;
+  height: 1.8em;
+  width: 1.8em;
+  top: 25px;
+  right: 15px;
 }
 
-/*  Triangles ==========*/
+/* Siren Img & Siren Flash =========*/
+
+#siren-img {
+  position: absolute;
+  top:25px;
+  left: 47px;
+  z-index: 2;
+}
+#siren-flash {
+  position: absolute;
+  left: 20px;
+  z-index: 0;
+  -webkit-animation: blink 1s linear infinite;
+  -moz-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+/* Ascension Box =========*/
+#ascension-box {
+  -webkit-animation: shake 1s linear infinite;
+  -moz-animation: shake 1s linear infinite;
+  animation: shake 1s linear infinite;
+  -webkit-animation-origin: 50% 50%;
+}
+/* Triangles == Arrows
+=================================*/
 
 .arrow-up {
-  position: absolute;
 	width: 0;
 	height: 0;
   z-index: 1;
@@ -81,24 +155,49 @@ Author: Biznobo
 	border-right: 6px solid transparent;
 	border-bottom: 6px solid #ff9f17;
 }
+.arrow-up-sm {
+	width: 0;
+	height: 0;
+  z-index: 1;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid #ff9f17;
+}
+/* Indoctrination Arrow & Magic Box ===========*/
+
 .arrow-1 {
-  top: 53%;
-  left: 39.8%;
+  position: absolute;
+  top: 75px;
+  left: 55px;
   -webkit-animation:fall .8s linear infinite;
   -moz-animation:fall .8s linear infinite;
   animation: fall .8s linear infinite;
 }
+.magic-box-1 {
+  position: absolute;
+  top: 113px;
+  left: 55px;
+  height: 12px;
+  width: 15px;
+  z-index: 2;
+  background: #4e4e4e;
+}
+
+/* Arrows-And-Band-1 ===========*/
+
 .arrow-2 {
-  top: 60.25%;
-  right: 14%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
   overflow: hidden;
   -webkit-animation:shortFall 3s linear infinite;
   -moz-animation:shortFall 3s linear infinite;
   animation: shortFall 3s linear infinite;
 }
 .arrow-3 {
-  top: 60.25%;
-  right: 14%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
   overflow: hidden;
   -webkit-animation:shortFall 3s linear infinite;
   -moz-animation:shortFall 3s linear infinite;
@@ -106,8 +205,9 @@ Author: Biznobo
   animation-delay: 600ms;
 }
 .arrow-4 {
-  top: 60.25%;
-  right: 14%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
   overflow: hidden;
   -webkit-animation:shortFall 3s linear infinite;
   -moz-animation:shortFall 3s linear infinite;
@@ -115,8 +215,9 @@ Author: Biznobo
   animation-delay: 1200ms;
 }
 .arrow-5 {
-  top: 60.25%;
-  right: 14%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
   overflow: hidden;
   -webkit-animation:shortFall 3s linear infinite;
   -moz-animation:shortFall 3s linear infinite;
@@ -124,44 +225,133 @@ Author: Biznobo
   animation-delay: 1800ms;
 }
 .arrow-6 {
-  top: 60.25%;
-  right: 14%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
   overflow: hidden;
   -webkit-animation:shortFall 3s linear infinite;
   -moz-animation:shortFall 3s linear infinite;
   animation: shortFall 3s linear infinite;
   animation-delay: 2400ms;
 }
-.magic-box {
-  position: absolute;
-  top: 62.9%;
-  left: 39.75%;
-  height: 12px;
-  width: 15px;
-  z-index: 2;
-  background: #4e4e4e;
-}
-
-/*  Bands ==========*/
-
 .band-1 {
   position: absolute;
-  top: 64.8%;
-  right: 13.75%;
-  width: 11.4%;
-  height: 3.25%;
+  top: 24px;
+  right: 1px;
+  width: 150px;
+  height: 12px;
   background: #cbcac8;
   border-radius: 8px;
+}
+
+/* Arrows-And-Band-1 ===========*/
+.arrow-7 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+}
+.arrow-8 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 600ms;
+}
+.arrow-9 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 1200ms;
+}
+.arrow-10 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 1800ms;
+}
+.arrow-11 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 2400ms;
+}
+.arrow-12 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 3000ms;
+}
+.arrow-13 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 3600ms;
+}
+.arrow-14 {
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  overflow: hidden;
+  -webkit-animation: moveLeftFall 5s linear infinite;
+  -moz-animation: moveLeftFall 5s linear infinite;
+  animation: moveLeftFall 5s linear infinite;
+  animation-delay: 4200ms;
 }
 .band-2 {
   position: absolute;
-  top: 77%;
-  right: 30.5%;
-  width: 250px;
+  top: 20px;
+  right: 77px;
+  width: 258px;
   height: 12px;
   background: #cbcac8;
   border-radius: 8px;
 }
+.magic-box-2 {
+  position: absolute;
+  top: 13px;
+  right: 65px;
+  height: 9px;
+  width: 14px;
+  background-color: #4e4e4e;
+  z-index: 5;
+}
+.magic-box-3 {
+  position: absolute;
+  top: 41px;
+  left: 7px;
+  height:10px;
+  width: 13px;
+  z-index: 5;
+  background-color: #d8d8d8;
+}
+/* Bands Animations ===========*/
 .band::before {
   background-image: radial-gradient(#4b5d6f 40%, rgba(0, 0, 0, 0) 41%);
   background-size: 12px 12px;
@@ -185,6 +375,100 @@ Author: Biznobo
   position: absolute;
 }
 
+/* Conveyor-Belt===========*/
+
+.gear-5 {
+  position: absolute;
+  top:1px;
+}
+.gear-6 {
+  position: relative;
+  top: 260px;
+}
+
+/* Conveyor Buckets =========*/
+
+.bucket-1 {
+  position: absolute;
+  top: 260px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-animation: conveyor 10s linear infinite;
+  -moz-animation: conveyor 10s linear infinite;
+  animation: conveyor 10s linear infinite;
+}
+.bucket-2 {
+  position: absolute;
+  top: 260px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-animation: conveyor 10s linear infinite;
+  -moz-animation: conveyor 10s linear infinite;
+  animation: conveyor 10s linear infinite;
+  animation-delay: 2s;
+}
+.bucket-3 {
+  position: absolute;
+  top: 260px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-animation: conveyor 10s linear infinite;
+  -moz-animation: conveyor 10s linear infinite;
+  animation: conveyor 10s linear infinite;
+  animation-delay: 4s;
+}
+.bucket-4 {
+  position: absolute;
+  top: 260px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-animation: conveyor 10s linear infinite;
+  -moz-animation: conveyor 10s linear infinite;
+  animation: conveyor 10s linear infinite;
+  animation-delay: 6s;
+}
+.bucket-5 {
+  position: absolute;
+  top: 260px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-animation: conveyor 10s linear infinite;
+  -moz-animation: conveyor 10s linear infinite;
+  animation: conveyor 10s linear infinite;
+  animation-delay: 8s;
+}
+.arrow-15{
+  position: absolute;
+  top:225px;
+  right:38px;
+  overflow: hidden;
+  -webkit-animation: conveyorArrow1 4s linear infinite;
+  -moz-animation: conveyorArrow1 4s linear infinite;
+  animation: conveyorArrow1 4s linear infinite;
+  animation-delay: 500ms;
+}
+.arrow-16{
+  position: absolute;
+  top:225px;
+  right:38px;
+  overflow: hidden;
+  -webkit-animation: conveyorArrow1 4s linear infinite;
+  -moz-animation: conveyorArrow1 4s linear infinite;
+  animation: conveyorArrow1 4s linear infinite;
+  animation-delay: 2500ms;
+}
+.magic-box-4 {
+  position: absolute;
+  top: 85px;
+  right: 43px;
+  height: 0;
+  width: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #4e4e4e;
+  z-index: 5;
+  /*background-color: red;*/
+}
 /* Keyframe Animations
 ======================*/
 
@@ -194,46 +478,181 @@ Author: Biznobo
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 
 /* Counter Clock Wise Spin */
-@keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);}	}
-@-moz-keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);} }
-@-webkit-keyframes antiClockwiseSpin {0%  {transform: rotate(360deg);}100% {transform: rotate(0deg);} }
+@keyframes antiClockwiseSpin {
+  0%  {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}	}
+@-moz-keyframes antiClockwiseSpin {
+  0%  {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);} }
+@-webkit-keyframes antiClockwiseSpin {
+  0%  {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);} }
 
-/* Droplets */
-@keyframes fall{0% {transform:  translate(0px,0px)  ;}100% {transform:  translate(0px,38px)  ;}}
-@-moz-keyframes fall{0% {-moz-transform:  translate(0px,0px)  ;}100% {-moz-transform:  translate(0px,38px)  ;}}
-@-webkit-keyframes fall {0% {-webkit-transform:  translate(0px,0px)  ;}100% {-webkit-transform:  translate(0px,38px)  ;}}
+/* Triangle Drops Straight */
+@keyframes fall {
+  0% {transform:  translate(0px,0px)  ;}
+  100% {transform:  translate(0px,38px)  ;}}
+@-moz-keyframes fall {
+  0% {-moz-transform:  translate(0px,0px)  ;}
+  100% {-moz-transform:  translate(0px,38px)  ;}}
+@-webkit-keyframes fall {
+  0% {-webkit-transform:  translate(0px,0px)  ;}
+  100% {-webkit-transform:  translate(0px,38px)  ;}}
 
-/* Droplets Short Fall & Move Left */
-@keyframes shortFall{0% {transform:  translate(0px,0px)  ;}10% {transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
-@-moz-keyframes shortFall{0% {-moz-transform:  translate(0px,0px)  ;}40% {-moz-transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
-@-webkit-keyframes shortFall {0% {-webkit-transform:  translate(0px,0px)  ;}40% {-webkit-transform:  translate(0px,10px)  ;}80% {transform: translate(-130px, 10px)}90% {transform: translate(-138px, 13px)rotateZ(270deg);}100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+/* Triangles Short Fall & Move Left */
+@keyframes shortFall {
+    0% {transform:  translate(0px,0px)  ;}
+    10% {transform:  translate(0px,10px)  ;}
+    80% {transform: translate(-130px, 10px)}
+    90% {transform: translate(-138px, 13px)rotateZ(270deg);}
+    100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+@-moz-keyframes shortFall {
+  0% {-moz-transform:  translate(0px,0px)  ;}
+  40% {-moz-transform:  translate(0px,10px)  ;}
+  80% {transform: translate(-130px, 10px)}
+  90% {transform: translate(-138px, 13px)rotateZ(270deg);}
+  100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+@-webkit-keyframes shortFall {
+  0% {-webkit-transform:  translate(0px,0px)  ;}
+  40% {-webkit-transform:  translate(0px,10px)  ;}
+  80% {transform: translate(-130px, 10px)}
+  90% {transform: translate(-138px, 13px)rotateZ(270deg);}
+  100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
 
+/* Triangles Move Left & Drop */
+@keyframes moveLeftFall {
+  0% {transform: translate(0px,0px) ;}
+  80% {transform: translate(-255px,0px) ;}
+  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
+@-moz-keyframes moveLeftFall {
+  0% {transform: translate(0px,0px) ;}
+  80% {transform: translate(-255px,0px) ;}
+  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
+@-webkit-keyframes moveLeftFall {
+  0% {transform: translate(0px,0px) ;}
+  80% {transform: translate(-255px,0px) ;}
+  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
 
 /* Move Left */
-@keyframes band {0% {background-position: 0px 0px;}100% {background-position: -100% 0px;}}
-@-moz-keyframes band {0% {-moz-background-position: 0px 0px;}100% {-moz-background-position: 100% 0px;}}
-@-webkit-keyframes band {0% {-webkit-background-position: 0px 0px;}100% {-webkit-background-position: 100% 0px;}}
+@keyframes band {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -100% 0px;}}
+@-moz-keyframes band {
+  0% {-moz-background-position: 0px 0px;}
+  100% {-moz-background-position: 100% 0px;}}
+@-webkit-keyframes band {
+  0% {-webkit-background-position: 0px 0px;}
+  100% {-webkit-background-position: 100% 0px;}}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6 .band::before {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+/* Blinking*/
+@keyframes blink {50% {opacity: 0.0;} }
+@-moz-keyframes blink {50% {-moz-opacity: 0.0;} }
+@-webkit-keyframes blink {50% {-webkit-opacity: 0.0;} }
+
+/* Shake */
+@keyframes shake {
+	0%  { transform: rotate(0deg); }
+	10% { transform: rotate(-1deg); }
+	20% { transform: rotate(1deg); }
+	30% { transform: rotate(0deg); }
+	40% { transform: rotate(1deg); }
+	50% { transform: rotate(-1deg); }
+	60% { transform: rotate(0deg); }
+	70% { transform: rotate(-1deg); }
+	80% { transform: rotate(1deg); }
+	90% { transform: rotate(0deg); }
+	100%{ transform: rotate(-1deg); }
+}
+@-moz-keyframes shake {
+	0%  { -moz-transform: rotate(0deg); }
+	10% { -moz-transform: rotate(-1deg); }
+	20% { -moz-transform: rotate(1deg); }
+	30% { -moz-transform: rotate(0deg); }
+	40% { -moz-transform: rotate(1deg); }
+	50% { -moz-transform: rotate(-1deg); }
+	60% { -moz-transform: rotate(0deg); }
+	70% { -moz-transform: rotate(-1deg); }
+	80% { -moz-transform: rotate(1deg); }
+	90% { -moz-transform: rotate(0deg); }
+	100%{ -moz-transform: rotate(-1deg); }
+}
+@-webkit-keyframes shake {
+	0%  { -webkit-transform: rotate(0deg); }
+	10% { -webkit-transform: rotate(-1deg); }
+	20% { -webkit-transform: rotate(1deg); }
+	30% { -webkit-transform: rotate(0deg); }
+	40% { -webkit-transform: rotate(1deg); }
+	50% { -webkit-transform: rotate(-1deg); }
+	60% { -webkit-transform: rotate(0deg); }
+	70% { -webkit-transform: rotate(-1deg); }
+	80% { -webkit-transform: rotate(1deg); }
+	90% { -webkit-transform: rotate(0deg); }
+	100%{ -webkit-transform: rotate(-1deg); }
+}
+
+/* Conveyor Belt Bucket */
+@keyframes conveyor {
+	0%  { transform: translate(0px, 0px); }
+	10% { transform: translate(0px, -30px)rotate(-45deg); }
+	35% { transform: translate(0px, -185px); }
+	40% { transform: translate(0px, -190px)rotate(-90deg); }
+  45% { transform: translate(0px, -210px); }
+	55% { transform: translate(0px, -265px); }
+	60% { transform: translate(20px, -265px); }
+  65% { transform: translate(20px, -240px); }
+  90% { transform: translate(20px, 20px); }
+	95% { transform: translate(0px, 20px); }
+	100%{ transform: translate(0px, 0px); }
+}
+@-moz-keyframes conveyor {
+  0%  { -moz-transform: translate(0px, 0px); }
+	10% { -moz-transform: translate(0px, -30px)rotate(-45deg); }
+	35% { -moz-transform: translate(0px, -185px); }
+	40% { -moz-transform: translate(0px, -190px)rotate(-90deg); }
+  45% { -moz-transform: translate(0px, -210px); }
+	55% { -moz-transform: translate(0px, -260px); }
+	60% { -moz-transform: translate(20px, -260px); }
+  65% { -moz-transform: translate(20px, -240px); }
+  90% { -moz-transform: translate(20px, 20px); }
+	95% { -moz-transform: translate(0px, 20px); }
+	100%{ -moz-transform: translate(0px, 0px); }
+}
+@-webkit-keyframes conveyor {
+  0%  { -webkit-transform: translate(0px, 0px); }
+	10% { -webkit-transform: translate(0px, -30px)rotate(-45deg); }
+	35% { -webkit-transform: translate(0px, -185px); }
+	40% { -webkit-transform: translate(0px, -190px)rotate(-90deg); }
+  45% { -webkit-transform: translate(0px, -210px); }
+	55% { -webkit-transform: translate(0px, -260px); }
+	60% { -webkit-transform: translate(20px, -260px); }
+  65% { -webkit-transform: translate(20px, -240px); }
+  90% { -webkit-transform: translate(20px, 20px); }
+	95% { -webkit-transform: translate(0px, 20px); }
+	100%{ -webkit-transform: translate(0px, 0px); }
+}
+
+/* Conveyor Belt Bucket */
+@keyframes conveyorArrow1 {
+	0%  { transform: translate(0px, 0px); }
+	10% { transform: translate(11px, 12px)rotate(-45deg); }
+	78% { transform: translate(13px, -155px); }
+	85% { transform: translate(0px, -150px)rotate(-90deg); }
+  100% { transform: translate(-14px, -135px)rotate(-360deg); }
+}
+@-moz-keyframes conveyorArrow1 {
+	0%  { -moz-transform: translate(0px, 0px); }
+	10% { -moz-transform: translate(11px, 12px)rotate(-45deg); }
+	78% { -moz-transform: translate(13px, -155px); }
+	85% { -moz-transform: translate(0px, -150px)rotate(-90deg); }
+  100% { -moz-transform: translate(-14px, -135px)rotate(-360deg); }
+}
+@-webkit-keyframes conveyorArrow1 {
+	0%  { -webkit-transform: translate(0px, 0px); }
+	10% { -webkit-transform: translate(11px, 12px)rotate(-45deg); }
+	78% { -webkit-transform: translate(13px, -155px); }
+	85% { -webkit-transform: translate(0px, -150px)rotate(-90deg); }
+  100% { -webkit-transform: translate(-14px, -135px)rotate(-360deg); }
 }
