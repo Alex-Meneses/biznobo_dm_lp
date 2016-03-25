@@ -43,7 +43,13 @@ Author: Biznobo
   position: relative;
   width: 1280px;
 }
-
+#biznobo-aweber-container {
+  position: absolute;
+  top: 115px;
+  left: 230px;
+  height: 135px;
+  width: 135px;
+}
 #indoctrination-gears{
   position: absolute;
   top: 100px;
@@ -102,7 +108,18 @@ Author: Biznobo
 /* =================================================
                  Animated Elements
 ====================================================*/
-
+/* =============================
+    Biznobo-Aweber-Container
+===============================*/
+#lever {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  -webkit-transform-origin: 50%;
+  -webkit-animation:leverPull 3s linear infinite;
+  -moz-animation:leverPull 3s linear infinite;
+  animation: leverPull 3s linear infinite;
+}
 /* =============================
     Indoctrination Gears
 ===============================*/
@@ -506,7 +523,13 @@ Indoctrination Arrow and Magic Box
   border-top: 12px solid #4e4e4e;
   z-index: 5;
 }
-
+.magic-box-5 {
+  position: absolute;
+  top: 214px;
+  right: 27px;
+  transform: rotate(-51deg);
+  z-index: 2;
+}
 /* =============================
    Segmentation Bucket Arrows
 ===============================*/
@@ -583,6 +606,15 @@ Indoctrination Arrow and Magic Box
   animation: theBucketDrop 1.5s linear infinite;
   animation-delay: 1250ms;
 }
+.arrow-23{
+  position: absolute;
+  top: 15px;
+  right: 4px;
+  -webkit-animation: theBucketDrop 1.5s linear infinite;
+  -moz-animation: theBucketDrop 1.5s linear infinite;
+  animation: theBucketDrop 1.5s linear infinite;
+  animation-delay: 1650ms;
+}
 .magic-box-8 {
   position: absolute;
   top: 0px;
@@ -603,6 +635,22 @@ Indoctrination Arrow and Magic Box
 /* =============================
       Keyframe Animation
 ===============================*/
+/* Lever Pull*/
+@keyframes leverPull {
+  0%  {transform: translate(0px,0px)rotate(0deg);}
+  25% {transform: translate(1px, 0px)rotate(20deg);}
+  50% {transform: translate(2px, 0px)rotate(80deg);}
+  100%{transform: translate(0px, 0px)rotate(0deg);}	}
+@-moz-keyframes leverPull {
+  0%  {transform: translate(0px,0px)rotate(0deg);}
+  25% {transform: translate(1px, 0px)rotate(20deg);}
+  50% {transform: translate(2px, 0px)rotate(80deg);}
+  100%{transform: translate(0px, 0px)rotate(0deg);}	}
+@-webkit-keyframes leverPull {
+  0%  {transform: translate(0px,0px)rotate(0deg);}
+  25% {transform: translate(1px, 0px)rotate(20deg);}
+  50% {transform: translate(2px, 0px)rotate(80deg);}
+  100%{transform: translate(0px, 0px)rotate(0deg);}	}
 
 /* Clock Wise Spin */
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
