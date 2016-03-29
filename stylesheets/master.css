@@ -29,6 +29,19 @@ nav {
   top: 10px;
 }
 
+.page-headline h4 {
+  margin:0;
+  padding-top:25px;
+  text-align: center;
+}
+.page-headline p {
+  font-size: 20px;
+  margin:0;
+  padding-top:15px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
 #header-img {
   width: 1250px;
   position: relative;
@@ -707,9 +720,9 @@ Indoctrination Arrow and Magic Box
          Add To Two List
 ===============================*/
 
-.add-to-two-list-gif {
+.funnelblueprint-gif {
   position: relative;
-  top: -560px;
+  top: -402px;
   left: 151px;
   height: 303px;
 }
@@ -722,9 +735,9 @@ Indoctrination Arrow and Magic Box
   top:-129px;
   right: 368px;
 }
-.add-to-two-list-copy {
+.funnelblueprint-copy {
   position: absolute;
-  top: -545px;
+  top: -356px;
   right: 0;
   text-align: left;
   width: 460px;
@@ -732,9 +745,9 @@ Indoctrination Arrow and Magic Box
 /* =============================
         Move From List
 ===============================*/
-.cart-abandonment-gif {
+.add-to-two-list-gif {
   position: relative;
-  top: 9px;
+  top: 166px;
   left: 95px;
   height: 303px;
 }
@@ -747,9 +760,9 @@ Indoctrination Arrow and Magic Box
   top: -124px;
   left: 22px;
 }
-.cart-abandonment-copy {
+.add-to-two-list-copy {
   position: relative;
-  top: -280px;
+  top: -100px;
   margin-left: 70px;
   text-align: left;
   width: 460px;
@@ -757,23 +770,25 @@ Indoctrination Arrow and Magic Box
 /* =============================
       Desired Action Move
 ===============================*/
-.desired-action-move-gif {
+.cart-abandonment-gif {
   position: relative;
-  top: -42px;
+  top: 181px;
   left: 155px;
   height: 303px;
 }
 .gear-11 {
   position: absolute;
-  top: 500px;
+  top: -105px;
 }
 .gear-12 {
   position: absolute;
-  top:500px;
+  top:-103px;
   right: 367px;
 }
-.desired-action-move-copy {
-  float: right;
+.cart-abandonment-copy {
+  position: relative;
+  left: 832px;
+  top: -94px;
   text-align: left;
   width: 460px;
 }
