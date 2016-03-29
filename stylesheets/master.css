@@ -30,7 +30,7 @@ nav {
 }
 
 #header-img {
-  width: 1280px;
+  width: 1250px;
   position: relative;
 }
 
@@ -70,23 +70,23 @@ h4 {
 }
 #indoctrination-gears{
   position: absolute;
-  top: 100px;
-  left: 450px;
+  top: 103px;
+  left: 461px;
   width:125px;
 }
 
 #arrows-and-band-1 {
   position: absolute;
-  top: 195px;
-  right: 160px;
+  top: 205px;
+  right: 190px;
   height: 60px;
   width: 200px;
 }
 
 #arrows-and-band-2 {
   position: absolute;
-  top: 240px;
-  right: 310px;
+  top: 246px;
+  right: 324px;
   height: 50px;
   width: 360px;
 }
@@ -100,26 +100,26 @@ h4 {
 }
 #ascension {
   position: absolute;
-  top: 40px;
-  right: 320px;
+  top: 48px;
+  right: 306px;
 }
 #conveyor-belt {
   position: absolute;
-  top: 45px;
-  right: 6px;
+  top: 50px;
+  right: 35px;
   height: 300px;
 }
 #segmentation {
   position: absolute;
-  top: 115px;
-  right: 124px;
+  top: 119px;
+  right: 160px;
   height: 60px;
   width: 60px;
 }
 #the-bucket {
   position: absolute;
-  top: 248px;
-  right: 230px;
+  top: 255px;
+  right: 266px;
   height: 60px;
   width: 60px;
 }
@@ -131,8 +131,8 @@ h4 {
 ===============================*/
 #lever {
   position: absolute;
-  top: 2px;
-  left: 10px;
+  top: 7px;
+  left: 16px;
   -webkit-transform-origin: 50%;
   -webkit-animation:leverPull 3s linear infinite;
   -moz-animation:leverPull 3s linear infinite;
@@ -185,13 +185,13 @@ h4 {
 
 #siren-img {
   position: absolute;
-  top:25px;
-  left: 49px;
+  top:27px;
+  left: 69px;
   z-index: 2;
 }
 #siren-flash {
   position: absolute;
-  left: 20px;
+  left: 42px;
   z-index: 0;
   -webkit-animation: blink 1s linear infinite;
   -moz-animation: blink 1s linear infinite;
@@ -230,16 +230,16 @@ Indoctrination Arrow and Magic Box
 
 .arrow-1 {
   position: absolute;
-  top: 75px;
-  left: 56px;
+  top: 84px;
+  left: 58px;
   -webkit-animation:fall .8s linear infinite;
   -moz-animation:fall .8s linear infinite;
   animation: fall .8s linear infinite;
 }
 .magic-box-1 {
   position: absolute;
-  top: 114px;
-  left: 55px;
+  top: 116px;
+  left: 57px;
   height: 12px;
   width: 15px;
   z-index: 2;
@@ -307,7 +307,7 @@ Indoctrination Arrow and Magic Box
   position: absolute;
   top: 24px;
   right: 1px;
-  width: 150px;
+  width: 142px;
   height: 12px;
   background: #cbcac8;
   border-radius: 8px;
@@ -399,7 +399,7 @@ Indoctrination Arrow and Magic Box
   position: absolute;
   top: 20px;
   right: 77px;
-  width: 258px;
+  width: 227px;
   height: 12px;
   background: #cbcac8;
   border-radius: 8px;
@@ -415,8 +415,8 @@ Indoctrination Arrow and Magic Box
 }
 .magic-box-3 {
   position: absolute;
-  top: 42px;
-  left: 7px;
+  top: 43px;
+  left: 37px;
   height:10px;
   width: 13px;
   z-index: 5;
@@ -536,7 +536,7 @@ Indoctrination Arrow and Magic Box
 }
 .magic-box-4 {
   position: absolute;
-  top: 85px;
+  top: 84px;
   right: 43px;
   height: 0;
   width: 0;
@@ -547,7 +547,7 @@ Indoctrination Arrow and Magic Box
 }
 .magic-box-5 {
   position: absolute;
-  top: 214px;
+  top: 217px;
   right: 27px;
   transform: rotate(-51deg);
   z-index: 2;
@@ -662,7 +662,7 @@ Indoctrination Arrow and Magic Box
 
 .integrations-section {
   position: absolute;
-  top: 936px;
+  top: 423px;
   height: 250px;
 }
 #integrations-bg {
@@ -700,8 +700,8 @@ Indoctrination Arrow and Magic Box
 #section-2-img {
   width: 1190px;
   position: relative;
-  top: -240px;
-  left: 77px;
+  top: -57px;
+  left: 79px;
 }
 /* =============================
          Add To Two List
@@ -709,8 +709,8 @@ Indoctrination Arrow and Magic Box
 
 .add-to-two-list-gif {
   position: relative;
-  top: -21px;
-  left: 160px;
+  top: -560px;
+  left: 151px;
   height: 303px;
 }
 .gear-7 {
@@ -723,8 +723,9 @@ Indoctrination Arrow and Magic Box
   right: 368px;
 }
 .add-to-two-list-copy {
-  float:right;
-  margin-top: 10px;
+  position: absolute;
+  top: -545px;
+  right: 0;
   text-align: left;
   width: 460px;
 }
@@ -733,22 +734,23 @@ Indoctrination Arrow and Magic Box
 ===============================*/
 .cart-abandonment-gif {
   position: relative;
-  top: 240px;
-  left: 650px;
+  top: 9px;
+  left: 95px;
   height: 303px;
 }
 .gear-9 {
   position: absolute;
-  top: 450px;
+  top: -131px;
 }
 .gear-10 {
   position: absolute;
-  top: 409px;
-  left: 113px;
+  top: -124px;
+  left: 22px;
 }
 .cart-abandonment-copy {
-  margin-top: -60px;
-  margin-left: 90px;
+  position: relative;
+  top: -280px;
+  margin-left: 70px;
   text-align: left;
   width: 460px;
 }
@@ -757,22 +759,21 @@ Indoctrination Arrow and Magic Box
 ===============================*/
 .desired-action-move-gif {
   position: relative;
-  top: 249px;
-  left: 160px;
+  top: -42px;
+  left: 155px;
   height: 303px;
 }
 .gear-11 {
   position: absolute;
-  top: 1025px;
+  top: 500px;
 }
 .gear-12 {
   position: absolute;
-  top:1017px;
+  top:500px;
   right: 367px;
 }
 .desired-action-move-copy {
   float: right;
-  margin-top: 285px;
   text-align: left;
   width: 460px;
 }
@@ -827,38 +828,38 @@ Indoctrination Arrow and Magic Box
 @keyframes shortFall {
     0% {transform:  translate(0px,0px)  ;}
     10% {transform:  translate(0px,10px)  ;}
-    80% {transform: translate(-130px, 10px)}
-    90% {transform: translate(-138px, 13px)rotateZ(270deg);}
-    100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+    80% {transform: translate(-120px, 10px)}
+    90% {transform: translate(-128px, 13px)rotateZ(270deg);}
+    100% {transform: translate(-135px, 38px)rotateZ(180deg)}}
 @-moz-keyframes shortFall {
   0% {-moz-transform:  translate(0px,0px)  ;}
   40% {-moz-transform:  translate(0px,10px)  ;}
-  80% {transform: translate(-130px, 10px)}
-  90% {transform: translate(-138px, 13px)rotateZ(270deg);}
-  100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+  80% {transform: translate(-120px, 10px)}
+  90% {transform: translate(-128px, 13px)rotateZ(270deg);}
+  100% {transform: translate(-135px, 38px)rotateZ(180deg)}}
 @-webkit-keyframes shortFall {
   0% {-webkit-transform:  translate(0px,0px)  ;}
   40% {-webkit-transform:  translate(0px,10px)  ;}
-  80% {transform: translate(-130px, 10px)}
-  90% {transform: translate(-138px, 13px)rotateZ(270deg);}
-  100% {transform: translate(-145px, 38px)rotateZ(180deg)}}
+  80% {transform: translate(-120px, 10px)}
+  90% {transform: translate(-128px, 13px)rotateZ(270deg);}
+  100% {transform: translate(-135px, 38px)rotateZ(180deg)}}
 
 /* Triangles Move Left & Drop */
 @keyframes moveLeftFall {
   0% {transform: translate(0px,0px) ;}
-  80% {transform: translate(-255px,0px) ;}
-  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
-  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
+  80% {transform: translate(-225px,0px) ;}
+  90% {transform: translate(-235px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-248px, 30px)rotateZ(200deg)}}
 @-moz-keyframes moveLeftFall {
   0% {transform: translate(0px,0px) ;}
-  80% {transform: translate(-255px,0px) ;}
-  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
-  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
+  80% {transform: translate(-225px,0px) ;}
+  90% {transform: translate(-235px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-248px, 30px)rotateZ(200deg)}}
 @-webkit-keyframes moveLeftFall {
   0% {transform: translate(0px,0px) ;}
-  80% {transform: translate(-255px,0px) ;}
-  90% {transform: translate(-265px, 3px)rotateZ(270deg);}
-  100% {transform: translate(-278px, 30px)rotateZ(200deg)}}
+  80% {transform: translate(-225px,0px) ;}
+  90% {transform: translate(-235px, 3px)rotateZ(270deg);}
+  100% {transform: translate(-248px, 30px)rotateZ(200deg)}}
 
 /* Move Left */
 @keyframes band {
